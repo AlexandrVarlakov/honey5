@@ -1,0 +1,30 @@
+@import '_easyAnimation.scss';
+
+.modal-fog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(117, 104, 93, 0.2);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-scroll{
+    overflow: hidden;
+}
+.promo-modal-fog{
+    
+    
+    
+    
+
+    @media (max-width: 768px){
+        padding: 50px 20px 50px;
+        justify-content: center;
+        overflow-y: auto;
+    }
+}

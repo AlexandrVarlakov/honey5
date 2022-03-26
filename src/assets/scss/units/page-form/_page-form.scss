@@ -1,0 +1,267 @@
+.page-form{
+    width: 100%;
+    max-width: 530px;
+    position: relative;
+    z-index: 15;
+}
+.page-form__title{
+    font-family: $font-mar;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+    color: #3F342A;
+    margin-bottom: 24px;
+
+    @media (max-width: 1024px){
+        font-size: 26px;
+    }
+    @media (max-width: 768px){
+        margin-bottom: 16px;
+    }
+}
+
+.page-form__slogan{
+    font-family: $font-r;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #3F342A;
+    margin-bottom: 24px;
+    @media (max-width: 1024px){
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+.page-form__row{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 560px){
+        flex-direction: column;
+    }
+}
+.page-form__input.filling{
+    background: rgba(255, 201, 77, 0.4);
+    border-color: transparent;
+}
+.page-form__input{
+    
+    background-color: transparent;
+    border: 1px solid #FFE3A1;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-family: $font-r;
+    font-weight: 500;
+    transition: 300ms;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    &::placeholder{
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(63, 52, 42, 0.8);
+    }
+
+    &:focus{
+        background: rgba(255, 201, 77, 0.2);
+        border-color: transparent;
+    }
+}
+
+.page-form__input[name = "name"]{
+    width: 200px;
+    margin-right: 16px;
+
+    @media (max-width: 560px){
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+.page-form__input[name = "phone"]{
+    width: 310px;
+
+    @media (max-width: 560px){
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+.page-form__message.filling{
+    background: rgba(255, 201, 77, 0.4);
+    border-color: transparent;
+}
+.page-form__message{
+    width: 100%;
+    resize: none;
+    height: 128px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    border: 1px solid #FFE3A1;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: $font-r;
+    font-weight: 500;
+    margin: 10px 0;
+    transition: 300ms;
+    background-color: transparent;
+    &::placeholder{
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(63, 52, 42, 0.8);
+    }
+    &:focus{
+        background: rgba(255, 201, 77, 0.2);
+        border-color: transparent;
+    }
+}
+
+.page-form__btn-wrap{
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    
+    @media (max-width: 560px){
+        justify-content: center;
+    }
+
+    
+}
+.page-form__input-wrap{
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+}
+
+
+
+
+
+.page-form__input-wrap.phone{
+    &::before{
+        content: "Введите номер";
+        width: 100%;
+        height: 100%;
+        
+        border-radius: 30px;
+        display: none;
+    }
+}
+
+.page-form__input-wrap.name{
+    &::before{
+        content: "Введите имя";
+        width: 100%;
+        height: 100%;
+        
+        border-radius: 30px;
+        display: none;
+    }
+}
+
+.page-form__input-wrap.phone.error, .page-form__input-wrap.name.error{
+    &::before{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FD8C68;;
+        font-size: 18px;
+        line-height: 135%;
+
+        /* or 24px */
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: rgba(63, 52, 42, 0.8);
+    }
+}
+
+
+
+
+
+
+.page-form__btn{
+    padding: 16px 32px;
+    background: #FFC94D;
+    border-radius: 30px;
+    transition: 300ms;
+    font-family: $font-r;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    color: #3F342A;
+
+    @media (max-width: 420px){
+        width: 100%;
+    }
+
+    &:hover{
+        background-color: #F2AD0D;;
+    }
+}
+.page-form__btn.success{
+    color: #6FCF97;;;
+}
+.tt-form{
+    
+    .page-form__btn.success{
+        color: #6FCF97;;;
+    }
+    .page-form__input[name = "phone"]{
+        width: 310px;
+        background: rgba(255, 201, 77, 0.4);
+        text-align: center;
+        margin: 0;
+        @media (max-width: 560px){
+            margin-right: 0px;
+            width: 100%;
+        }
+    }
+    .page-form__btn{
+        background: #3F342A;
+        color: #FFC94D;;
+    }
+    
+    .page-form__btn-wrap{
+        justify-content: center;
+    }
+    .page-form__input-wrap{
+        position: relative;
+        margin-bottom: 12px;
+        &::before{
+            width: 100%;
+            height: 100%;
+            
+            border-radius: 30px;
+            display: none;
+        }
+    }
+
+    .page-form__input-wrap.error{
+        &::before{
+            content: "Введите номер";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FD8C68;;
+            font-size: 18px;
+            line-height: 135%;
+
+            /* or 24px */
+            text-align: center;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+
+            color: rgba(63, 52, 42, 0.8);
+        }
+        
+    }
+}
+.msg-form{
+    .page-form__btn.success{
+        color: #3F342A;
+        background-color: #6FCF97;;
+    }
+}

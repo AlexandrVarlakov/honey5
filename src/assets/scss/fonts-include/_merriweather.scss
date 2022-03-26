@@ -1,0 +1,56 @@
+$font-mar: 'Merriweather';
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-Bold.eot');
+    src: local('Merriweather Bold'), local('Merriweather-Bold'),
+        url('../fonts/Merriweather/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather/Merriweather-Bold.woff2') format('woff2'),
+        url('../fonts/Merriweather/Merriweather-Bold.woff') format('woff'),
+        url('../fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-BoldItalic.eot');
+    src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'),
+        url('../fonts/Merriweather/Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather/Merriweather-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Merriweather/Merriweather-BoldItalic.woff') format('woff'),
+        url('../fonts/Merriweather/Merriweather-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-BlackItalic.eot');
+    src: local('Merriweather Black Italic'), local('Merriweather-BlackItalic'),
+        url('../fonts/Merriweather/Merriweather-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather/Merriweather-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Merriweather/Merriweather-BlackItalic.woff') format('woff'),
+        url('../fonts/Merriweather/Merriweather-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-Black.eot');
+    src: local('Merriweather Black'), local('Merriweather-Black'),
+        url('../fonts/Merriweather/Merriweather-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather/Merriweather-Black.woff2') format('woff2'),
+        url('../fonts/Merriweather/Merriweather-Black.woff') format('woff'),
+        url('../fonts/Merriweather/Merriweather-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

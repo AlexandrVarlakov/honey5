@@ -1,0 +1,48 @@
+.grid-form{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.grid-form__input-text{
+    border: 1px solid #999;
+    padding: 15px 20px;
+    width: 100%;
+}
+.grid-form__msg-text{
+    border: 1px solid #999;
+    padding: 15px 20px;
+    width: 100%;
+    height: 160px;
+    resize: none;
+}
+.grid-form__outer-wrap{
+
+}
+
+.grid-form__inner-wrap{
+    
+}
+
+.grid-form__2col{
+    grid-column: span 2;
+}
+.grid-form__3col{
+    grid-column: span 3;
+}
+
+.grid-form__btn-col{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid-form__btn{
+    border: 1px solid #777;
+    padding: 15px 10px;
+    width: 100%;
+    max-width: 320px;
+    
+}

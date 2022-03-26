@@ -1,0 +1,37 @@
+.hamburger{
+
+
+    width: 36px;
+    height: 36px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1.5px solid #FFC94D;
+    border-radius: 8px;
+    margin-left: 16px;
+    transition: 300ms;
+    div{
+        width: 16px;
+        height: 2px;
+        background-color:  #3F342A;;
+        border-radius: 50px;
+
+        &:nth-child(2){
+            margin: 3px 0;
+        }
+    }
+
+    &:hover{
+        background-color: #FFC94D;
+    }
+
+    @media (max-width: 1300px){
+        display: flex;
+    }
+}
+
+.hamburger.open{
+    background: #FFC94D;;
+}

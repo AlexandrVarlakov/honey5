@@ -1,0 +1,384 @@
+.header{
+    width: 100%;
+    padding: 36px 30px 36px;
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 3px solid #FEF7E7;
+
+    @media (max-width: 1024px){
+        padding: 36px 20px;
+    }
+    background-color: rgba(255, 252, 246, 0.9);;
+}
+
+.header__inner{
+    width: 100%;
+    max-width: 1300px;
+}
+
+.header__desk-group{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__mob-menu{
+    height: 0px;
+    overflow: hidden;
+
+    transition: 500ms;
+}
+
+.header__mob-menu--inner{
+    padding: 32px 0 0 0 ;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before{
+        width: 1px;
+        height: 18px;
+        background-color: rgba(117, 104, 93, 0.5);;
+    }
+}
+
+.header__work-time{
+    text-align: center;
+    margin-left: 32px;
+    margin-right: 16px;
+    font-weight: 500;
+    line-height: 1.35;
+    @media (max-width: 1300px){
+        display: none;
+    }
+}
+
+.header__soc-link{
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    path{
+        transition: 300ms;
+    }
+
+    &:hover{
+        path{
+            fill: #F2AD0D;
+        }
+    }
+
+    @media (max-width: 1300px){
+        display: none;
+    }
+}
+.h-contact{
+    position: relative;
+    margin: 0 16px;
+}
+
+
+.h-contact__tooltip{
+    min-width: 200px;
+    background: #FFE3A1;
+    border-radius: 16px;
+    padding: 24px;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, calc(100% + 26px));
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    &::before{
+        top: 0;
+        left: 50%; 
+        border: 10px solid transparent; 
+        border-bottom: 10px solid #FFE3A1; 
+        transform: translate(-50%, -100%);
+    }
+
+    
+}
+
+.h-contact.show{
+    .h-contact__btn{
+        background: #3F342A;
+        path{
+            fill: #F2AD0D;
+        }
+    }
+    .h-contact__tooltip{
+        display: flex;
+        animation: showTooltip 300ms forwards;
+    }
+}
+
+
+@keyframes showTooltip {
+    from {
+        opacity: 0;
+        transform: translate(-50%, calc(100% + 0px));
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%, calc(100% + 26px));
+    }
+}
+
+@keyframes fadeTooltip {
+    from {
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+
+
+.h-contact__phone-link{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #3F342A;
+}
+.h-contact__tt-bottom{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h-contact__messangers{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.h-contact__messanger-link{
+    margin: 0 8px;
+}
+
+.h-contact__work-time{
+    margin-top: 24px;
+    padding-top: 16px;
+    position: relative;
+    display: none;
+
+    &::before{
+        width: 18px;
+        height: 1px;
+        background-color: rgba(117, 104, 93, 0.5);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    p{
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 135%;
+        text-align: center;
+        /* identical to box height, or 22px */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #3F342A;
+    }
+
+    @media (max-width: 1300px){
+        display: block;
+    }
+}
+
+.h-contact__soc-links{
+    display: none;
+    justify-content: center;
+    margin-top: 16px;
+
+    @media (max-width: 1300px){
+        display: flex;
+    }
+}
+.h-contact__soc-link{
+    margin: 0 12px;
+
+    &:first-of-type{
+        margin-left: 0;
+    }
+
+    &:last-of-type{
+        margin-right: 0;
+    }
+
+    path{
+        transition: 300ms;
+    }
+
+    &:hover{
+        path{
+            fill: #FFC94D;
+        }
+    }
+
+    &:active{
+        path{
+            fill: #F2AD0D;;
+        }
+    }
+}
+
+.h-contact__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #3F342A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    transition: 300ms;
+    path{
+        transition: 300ms
+    }
+    
+    &:hover{
+        background: #3F342A;
+        path{
+            fill: #F2AD0D;
+        }
+        
+    }
+
+    
+}
+
+.h-order{
+    margin-left: 16px;
+    position: relative;
+
+    @media (max-width: 1300px){
+        display: none;
+    }
+}
+
+
+.h-order__tooltip{
+    width: 360px;
+    min-width: 200px;
+    background: #FFE3A1;
+    border-radius: 16px;
+    padding: 24px;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 0px;
+    transform: translate(0, calc(100% + 26px));
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    &::before{
+        top: 0;
+        right: 72px;
+        border: 10px solid transparent; 
+        border-bottom: 10px solid #FFE3A1; 
+        transform: translate(0%, -100%);
+    }
+
+    @media (max-width: 420px){
+        width: calc(100vw - 40px);
+    }
+}
+
+
+.h-order__tooltip.mob{
+    right: 0;
+    bottom: initial;
+    top: 0;
+    transform: translate(0, calc(-100% - 26px));
+
+    &::before{
+        top: initial;
+        bottom: 0;
+        right: 72px;
+        border: 10px solid transparent; 
+        border-bottom: initial; 
+        transform: translate(0%, 100%);
+
+        border: 10px solid transparent; 
+        border-top: 10px solid #FFE3A1; 
+    }
+}
+
+
+
+
+.h-order__btn{
+    border: 2px solid #FFC94D;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3F342A;
+    transition: 300ms;
+
+    &:hover{
+        background-color: #F2AD0D;
+        border-color: #F2AD0D;
+    }
+    
+}
+
+.h-order.show{
+    .h-order__tooltip{
+        display: flex;
+        animation: fadeTooltip 300ms forwards;
+    }
+    .h-order__btn{
+        background-color: #F2AD0D;
+    }
+}
+
+.menu.mob{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+
+    .menu__item{
+        
+        margin: 16px 0;
+
+        &:first-of-type{
+            margin-top: 0px;
+        }
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.h-order-wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+
+    .h-order{
+        display: block;
+    }
+}
