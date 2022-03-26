@@ -140,6 +140,8 @@
 
 .page-form__input-wrap.phone{
     &::before{
+        
+	    position: absolute;
         content: "Введите номер";
         width: 100%;
         height: 100%;
@@ -152,6 +154,8 @@
 .page-form__input-wrap.name{
     &::before{
         content: "Введите имя";
+        
+	    position: absolute;
         width: 100%;
         height: 100%;
         
@@ -162,6 +166,8 @@
 
 .page-form__input-wrap.phone.error, .page-form__input-wrap.name.error{
     &::before{
+        content: "";
+	    position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -232,6 +238,8 @@
         position: relative;
         margin-bottom: 12px;
         &::before{
+            content: "";
+	        position: absolute;
             width: 100%;
             height: 100%;
             
@@ -242,6 +250,8 @@
 
     .page-form__input-wrap.error{
         &::before{
+            
+	        position: absolute;
             content: "Введите номер";
             display: flex;
             justify-content: center;

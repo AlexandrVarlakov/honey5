@@ -20,8 +20,10 @@
     }
 
     &::before{
+        content: "";
+	    position: absolute;
         width: 32px;
-        height: 30px;
+        height: 31px;
         opacity: 0;
         transition: 300ms;
         left: 50%;
@@ -41,6 +43,8 @@
 }
 .menu__item.current{
     &::before{
+        content: "";
+	    position: absolute;
         opacity: 1;
         background-image: url('../img/icons/menu-elipse-active.svg');
         background-repeat: no-repeat;

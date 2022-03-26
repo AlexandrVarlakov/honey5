@@ -22,12 +22,6 @@ main{
 	flex-grow: 1;
 }
 
-*::before ,*::after{
-	content: "";
-	position: absolute;
-}
-
-
 a{
 	text-decoration: none;
 	outline: none;
@@ -535,6 +529,8 @@ ul{
 	position: relative;
 	cursor: pointer;
 	&::before{
+		content: "";
+		position: absolute;
 		width: 16px;
 		height: 16px;
 		background-repeat: no-repeat;
@@ -547,6 +543,8 @@ ul{
 input:checked + .visual-rb{
 	border: 2px solid #F2AD0D;
 	&::before{
+		content: "";
+		position: absolute;
 		display: block;
 	}
 	

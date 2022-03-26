@@ -103,10 +103,6 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-*::before, *::after {
-  content: "";
-  position: absolute; }
-
 a {
   text-decoration: none;
   outline: none; }
@@ -640,6 +636,8 @@ ul {
   position: relative;
   cursor: pointer; }
   .visual-rb::before {
+    content: "";
+    position: absolute;
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
@@ -651,6 +649,8 @@ ul {
 input:checked + .visual-rb {
   border: 2px solid #F2AD0D; }
   input:checked + .visual-rb::before {
+    content: "";
+    position: absolute;
     display: block; }
 
 .label-text {
@@ -1202,6 +1202,8 @@ input:checked + .visual-rb + .label-text + .border-label {
           align-items: center;
   position: relative; }
   .header__right::before {
+    content: "";
+    position: absolute;
     width: 1px;
     height: 18px;
     background-color: rgba(117, 104, 93, 0.5); }
@@ -1263,6 +1265,8 @@ input:checked + .visual-rb + .label-text + .border-label {
       -ms-flex-align: center;
           align-items: center; }
   .h-contact__tooltip::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 50%;
     border: 10px solid transparent;
@@ -1363,6 +1367,8 @@ input:checked + .visual-rb + .label-text + .border-label {
   position: relative;
   display: none; }
   .h-contact__work-time::before {
+    content: "";
+    position: absolute;
     width: 18px;
     height: 1px;
     background-color: rgba(117, 104, 93, 0.5);
@@ -1475,6 +1481,8 @@ input:checked + .visual-rb + .label-text + .border-label {
       -ms-flex-align: center;
           align-items: center; }
   .h-order__tooltip::before {
+    content: "";
+    position: absolute;
     top: 0;
     right: 72px;
     border: 10px solid transparent;
@@ -1494,6 +1502,8 @@ input:checked + .visual-rb + .label-text + .border-label {
       -ms-transform: translate(0, calc(-100% - 26px));
           transform: translate(0, calc(-100% - 26px)); }
   .h-order__tooltip.mob::before {
+    content: "";
+    position: absolute;
     top: initial;
     bottom: 0;
     right: 72px;
@@ -1629,6 +1639,8 @@ input:checked + .visual-rb + .label-text + .border-label {
   top: 25px;
   cursor: pointer; }
   .mob-menu__close::before, .mob-menu__close::after {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 3px;
     background-color: #fff;
@@ -2106,6 +2118,8 @@ input:checked + .visual-rb + .label-text + .border-label {
   top: 32px;
   right: 32px; }
   .modal__close::before, .modal__close::after {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 3px;
     background-color: #000;
@@ -2327,6 +2341,7 @@ input:checked + .visual-rb + .label-text + .border-label {
     margin-top: 0; }
 
 .order-form__inp-wrap.phone::before {
+  position: absolute;
   content: "Введите номер";
   width: 100%;
   height: 100%;
@@ -2334,6 +2349,7 @@ input:checked + .visual-rb + .label-text + .border-label {
   display: none; }
 
 .order-form__inp-wrap.name::before {
+  position: absolute;
   content: "Введите имя";
   width: 100%;
   height: 100%;
@@ -2341,6 +2357,7 @@ input:checked + .visual-rb + .label-text + .border-label {
   display: none; }
 
 .order-form__inp-wrap.phone.error::before, .order-form__inp-wrap.name.error::before {
+  content: "";
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3013,6 +3030,7 @@ input:checked + .visual-rb + .label-text + .border-label {
   margin: 10px 0; }
 
 .page-form__input-wrap.phone::before {
+  position: absolute;
   content: "Введите номер";
   width: 100%;
   height: 100%;
@@ -3021,12 +3039,15 @@ input:checked + .visual-rb + .label-text + .border-label {
 
 .page-form__input-wrap.name::before {
   content: "Введите имя";
+  position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 30px;
   display: none; }
 
 .page-form__input-wrap.phone.error::before, .page-form__input-wrap.name.error::before {
+  content: "";
+  position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3097,12 +3118,15 @@ input:checked + .visual-rb + .label-text + .border-label {
   position: relative;
   margin-bottom: 12px; }
   .tt-form .page-form__input-wrap::before {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 30px;
     display: none; }
 
 .tt-form .page-form__input-wrap.error::before {
+  position: absolute;
   content: "Введите номер";
   display: -webkit-box;
   display: -webkit-flex;
@@ -3147,8 +3171,10 @@ input:checked + .visual-rb + .label-text + .border-label {
   .menu__item:last-of-type {
     margin-right: 0; }
   .menu__item::before {
+    content: "";
+    position: absolute;
     width: 32px;
-    height: 30px;
+    height: 31px;
     opacity: 0;
     -webkit-transition: 300ms;
     -o-transition: 300ms;
@@ -3165,6 +3191,8 @@ input:checked + .visual-rb + .label-text + .border-label {
     opacity: 1; }
 
 .menu__item.current::before {
+  content: "";
+  position: absolute;
   opacity: 1;
   background-image: url("../img/icons/menu-elipse-active.svg");
   background-repeat: no-repeat; }
@@ -3212,6 +3240,8 @@ input:checked + .visual-rb + .label-text + .border-label {
   top: 32px;
   right: 32px; }
   .modal__close::before, .modal__close::after {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 3px;
     background-color: #000;
@@ -3423,6 +3453,7 @@ input:checked + .visual-rb + .label-text + .border-label {
     margin-top: 0; }
 
 .order-form__inp-wrap.phone::before {
+  position: absolute;
   content: "Введите номер";
   width: 100%;
   height: 100%;
@@ -3430,6 +3461,7 @@ input:checked + .visual-rb + .label-text + .border-label {
   display: none; }
 
 .order-form__inp-wrap.name::before {
+  position: absolute;
   content: "Введите имя";
   width: 100%;
   height: 100%;
@@ -3437,6 +3469,7 @@ input:checked + .visual-rb + .label-text + .border-label {
   display: none; }
 
 .order-form__inp-wrap.phone.error::before, .order-form__inp-wrap.name.error::before {
+  content: "";
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3512,6 +3545,8 @@ input:checked + .visual-rb + .label-text + .border-label {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .easySelect__vis-value::before {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 50; }
@@ -3602,6 +3637,8 @@ input:checked + .visual-rb + .label-text + .border-label {
   .easySelect__option:hover {
     background-color: rgba(0, 82, 177, 0.2); }
   .easySelect__option::before {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
